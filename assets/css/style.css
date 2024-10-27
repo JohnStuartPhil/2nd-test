@@ -1,0 +1,351 @@
+/* Google fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Kanit:ital,wght@0,300;1,100&display=swap');
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'kanit', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    height: 50px;
+}
+
+#game-title {
+    padding-top: 1rem;
+    font-size: 15px;
+}
+
+.game-area {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.control {
+    display: inline-block;
+    margin: 12px;
+    width: 75px;
+    height: 75px;
+}
+
+#messages {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 20px;
+    color: rgb(202, 31, 31);
+}
+
+.player {
+    padding-top: 1rem;
+    background-color: rgb(85, 138, 156);
+    float: left;
+    width: 45%;
+}
+
+#player-image {
+    width: 50%;
+    height: 50%;
+}
+
+#player-score {
+    font-size: 11px;
+}
+
+.computer {
+    padding-top: 1rem;
+    background-color: rgb(170, 48, 48);
+    float: right;
+    width: 45%;
+}
+
+#computer-image {
+    width: 50%;
+    height: 50%;
+}
+
+#computer-score {
+    font-size: 11px;
+}
+
+#end-message {
+    padding-bottom: 1rem;
+    height: 30px;
+    color: green;
+}
+
+.scores {
+    font-size: 11px;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: white;
+}
+
+#play-again {
+    display: inline-block;
+    margin: 2px;
+    width: 75px;
+    height: 75px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(61, 23, 23); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  .modal-content {
+    background-color: black;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #myBtn {
+    display: inline-block;
+    margin: 12px;
+    width: 75px;
+    height: 75px;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    #game-title {
+        padding-top: 1rem;
+        font-size: 35px;
+    }
+
+    .game-area {
+        padding-top: 1rem;
+    }
+
+    .control {
+        display: inline-block;
+        margin: 2px;
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+    }
+
+    .player {
+        padding-top: 1rem;
+        background-color: rgb(85, 138, 156);
+        float: left;
+        width: 45%;
+        border-style: solid;
+    }
+    
+    #player-image {
+        width: 50%;
+        height: 50%;
+    }
+    
+    #player-score {
+        font-size: 11px;
+    }
+    
+    .computer {
+        padding-top: 1rem;
+        background-color: rgb(170, 48, 48);
+        float: right;
+        width: 45%;
+        border-style: solid;
+    }
+
+    #player-score {
+        font-size: 25px;
+    }
+
+    #computer-score {
+        font-size: 25px;
+    }
+
+    .scores {
+        font-size: 25px;
+    }
+
+    #play-again {
+        display: inline-block;
+        margin: 2px;
+        width: 250px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        min-height: 50px;
+        padding-top: 5px;
+        text-align: center;
+        color: #fff;
+        background-color: white;
+    }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(61, 23, 23); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: black;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  #myBtn {
+    margin: 2px;
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+}
+  }
+
+  @media screen and (min-width: 992px) {
+    #game-title {
+        padding-top: 1rem;
+        font-size: 35px;
+    }
+    .control {
+        display: inline-block;
+        margin: 2px;
+        width: 150px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    #messages {
+        font-size: 20px;
+    }
+    #end-message {
+        font-size: 20px;
+    }
+    .player {
+        padding-top: 1rem;
+        background-color: rgb(85, 138, 156);
+        float: left;
+        width: 45%;
+        border-style: solid;
+    }
+    
+    #player-image {
+        width: 50%;
+        height: 50%;
+    }
+    
+    #player-score {
+        font-size: 11px;
+    }
+    
+    .computer {
+        padding-top: 1rem;
+        background-color: rgb(170, 48, 48);
+        float: right;
+        width: 45%;
+        border-style: solid;
+    }
+
+    #player-score {
+        font-size: 25px;
+    }
+
+    #computer-score {
+        font-size: 25px;
+    }
+
+    .scores {
+        font-size: 25px;
+    }
+
+    #play-again {
+        display: inline-block;
+        margin: 2px;
+        width: 150px;
+        height: 75px;
+        font-size: 20px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        min-height: 50px;
+        padding-top: 5px;
+        text-align: center;
+        color: #fff;
+        background-color: white;
+    }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(61, 23, 23); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: black;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+
+  #myBtn {
+        margin: 2px;
+        width: 500px;
+        height: 80px;
+        font-size: 20px;
+}
+  }
